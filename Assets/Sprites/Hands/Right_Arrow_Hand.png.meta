@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 62162ac52c1426541aaed75d3c1b566d
+guid: 86b1ece1191ccbc40845d81e5968ff36
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2020564518004106396
-    second: Menu_Screen_0
+      213: -754449043458281
+    second: Right_Arrow_Hand_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 105
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Menu_Screen_0
+      name: Right_Arrow_Hand_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 37
+        y: 101
+        width: 644
+        height: 266
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 46b5b9ab64385f3e0800000000000000
-      internalID: -2020564518004106396
+      spriteID: 71773c425d15dfff0800000000000000
+      internalID: -754449043458281
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Menu_Screen_0: -2020564518004106396
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
