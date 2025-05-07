@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 {
     public List<string> sequenceChecker = new List<string>();
     public List<Customers> customerList = new List<Customers>();
-    public Customers currentCustomer;
+    private Customers currentCustomer;
     int sequenceIndex = 0;
 
     [SerializeField] private GameObject leftPrefab;

@@ -2003,7 +2003,6 @@ MonoBehaviour:
   - {fileID: 2142909097}
   - {fileID: 936787228}
   - {fileID: 369358359}
-  currentCustomer: {fileID: 0}
   leftPrefab: {fileID: 9117074153485707718, guid: 05db5edd14253ef4ab17325682112e78, type: 3}
   rightPrefab: {fileID: 6797743576910141893, guid: b0e5733c1c8a76d4cbc13de219176115, type: 3}
   upPrefab: {fileID: 6794735758284552555, guid: 91c244d174821a64eb0ece7302347eb3, type: 3}
