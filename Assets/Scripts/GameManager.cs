@@ -82,7 +82,7 @@ public class GameManager : MonoBehaviour
                 StartCoroutine(LoadNewCustomer());
                
 
-                Debug.Log("Sequence completed");
+               // Debug.Log("Sequence completed");
             }
         }
         else
