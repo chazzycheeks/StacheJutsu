@@ -94,9 +94,11 @@ public class GameManager : MonoBehaviour
                 currentCustomer.DisplayShavedSprite();
                 sequenceDone = true;
                 //add 1 to score
+                timer.ResetTimer();
                 score.AddScore();
                 //delay 2 seconds
                 //LoadNewCustomer
+                
                 StartCoroutine(LoadNewCustomer());
                
 
@@ -123,7 +125,7 @@ public class GameManager : MonoBehaviour
         currentCustomer.gameObject.SetActive(true);
         currentCustomer.DisplayUnshavedSprite();
         GenerateButtons();
-        timer.ResetTimer();
+        
     }
 
     private void GenerateButtons()

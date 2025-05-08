@@ -6,10 +6,10 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    public float firstTimer = 5f;
-    public float timeLimit = 0f;
-    public float secondTimer = 3f;
-    public float thirdTimer = 2f;
+    private float firstTimer = 6f;
+    private float timeLimit = 0f;
+    private float secondTimer = 4f;
+    private float thirdTimer = 3f;
     
     GameManager gameManager;
     Score Score;
