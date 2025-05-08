@@ -9,25 +9,42 @@ public class GameManager : MonoBehaviour
 {
     public List<string> sequenceChecker = new List<string>();
     public List<Customers> customerList = new List<Customers>();
-    private Customers currentCustomer;
+    public Customers currentCustomer;
     int sequenceIndex = 0;
+    private bool sequenceDone = true;
 
     [SerializeField] private GameObject leftPrefab;
     [SerializeField] private GameObject rightPrefab;
     [SerializeField] private GameObject upPrefab;
     [SerializeField] private GameObject downPrefab;
     public GameObject arrowDisplay;
+
+    Timer timer;
+    Score score;
+
+    GameOverScreen gameOverScreen;
     //private Arrows displayCorrectArrowSprite;
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        gameOverScreen = FindAnyObjectByType<GameOverScreen>();
+        timer = FindAnyObjectByType<Timer>();
+        score = FindAnyObjectByType<Score>();
         StartCoroutine(LoadNewCustomer());
     }
 
     // Update is called once per frame
     void Update()
+    {
+        if (sequenceDone == false)
+        {
+            HandleSequenceInput();
+        }
+    }
+
+    private void HandleSequenceInput()
     {
         if (Input.GetKeyUp(KeyCode.UpArrow))
         {
@@ -50,7 +67,7 @@ public class GameManager : MonoBehaviour
             CheckSequence();
         }
     }
-    
+
     private void CheckSequence()
     {
         //Compare the latest string in sequenceChecker to the string in the current customer that has the same index
@@ -75,8 +92,9 @@ public class GameManager : MonoBehaviour
                 sequenceChecker.Clear();
                 //switch to shaved sprite
                 currentCustomer.DisplayShavedSprite();
-                
+                sequenceDone = true;
                 //add 1 to score
+                score.AddScore();
                 //delay 2 seconds
                 //LoadNewCustomer
                 StartCoroutine(LoadNewCustomer());
@@ -88,23 +106,24 @@ public class GameManager : MonoBehaviour
         else
         {
             SceneManager.LoadScene(2);
+            gameOverScreen.DisplayFinalScore();
         }
     }   
-    private IEnumerator LoadNewCustomer()
+    public IEnumerator LoadNewCustomer()
     {
+       
         yield return new WaitForSeconds(1f);
        if (currentCustomer != null)
         {
             currentCustomer.gameObject.SetActive(false);
         }
+        sequenceDone = false;
         int customerIndex = Random.Range(0, customerList.Count);
         currentCustomer = customerList[customerIndex];
         currentCustomer.gameObject.SetActive(true);
         currentCustomer.DisplayUnshavedSprite();
-        GenerateButtons(); 
-        
-
-        //Logic to load in the next customer
+        GenerateButtons();
+        timer.ResetTimer();
     }
 
     private void GenerateButtons()
