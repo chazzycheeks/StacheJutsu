@@ -8,8 +8,8 @@ public class Timer : MonoBehaviour
 {
     private float firstTimer = 6f;
     private float timeLimit = 0f;
-    private float secondTimer = 4f;
-    private float thirdTimer = 3f;
+    private float secondTimer = 3.5f;
+    private float thirdTimer = 2.5f;
     
     GameManager gameManager;
     Score Score;
@@ -28,12 +28,12 @@ public class Timer : MonoBehaviour
             RunTimer();
         }
 
-        if (Score.score == 5)
+        if (Score.score == 6)
         {
             currentTargetTime = secondTimer;
         }
 
-        if (Score.score == 10)
+        if (Score.score == 12)
         {
             currentTargetTime = thirdTimer;
         }
@@ -44,7 +44,8 @@ public class Timer : MonoBehaviour
         timeLimit += Time.deltaTime;
         if (timeLimit > currentTargetTime)
         {
-            SceneManager.LoadScene(2);
+            gameManager.mainGame.SetActive(false);
+            gameManager.gameOver.SetActive(true); 
         }
 
     }

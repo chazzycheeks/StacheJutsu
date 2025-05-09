@@ -19,19 +19,28 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject downPrefab;
     public GameObject arrowDisplay;
 
+    [SerializeField] private Animator nice;
+    [SerializeField] private Animator timerAnimation;
     Timer timer;
     Score score;
 
-    GameOverScreen gameOverScreen;
-    //private Arrows displayCorrectArrowSprite;
     
+    public GameObject mainGame;
+    public GameObject gameOver;
+    
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        gameOverScreen = FindAnyObjectByType<GameOverScreen>();
+        
         timer = FindAnyObjectByType<Timer>();
         score = FindAnyObjectByType<Score>();
+
+        if (score != null)
+        {
+            score.ResetScore();
+        }
         StartCoroutine(LoadNewCustomer());
     }
 
@@ -91,6 +100,7 @@ public class GameManager : MonoBehaviour
                 sequenceIndex = 0;
                 sequenceChecker.Clear();
                 //switch to shaved sprite
+                nice.SetTrigger("CustomerCompleted");
                 currentCustomer.DisplayShavedSprite();
                 sequenceDone = true;
                 //add 1 to score
@@ -107,8 +117,9 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene(2);
-            gameOverScreen.DisplayFinalScore();
+            mainGame.SetActive(false);
+            gameOver.SetActive(true);
+          
         }
     }   
     public IEnumerator LoadNewCustomer()
@@ -125,6 +136,7 @@ public class GameManager : MonoBehaviour
         currentCustomer.gameObject.SetActive(true);
         currentCustomer.DisplayUnshavedSprite();
         GenerateButtons();
+        timerAnimation.SetTrigger("StartTimer");
         
     }
 
