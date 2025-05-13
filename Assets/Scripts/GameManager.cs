@@ -19,8 +19,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject downPrefab;
     public GameObject arrowDisplay;
 
-    [SerializeField] private Animator nice;
-    [SerializeField] private Animator timerAnimation;
+    public Animator nice;
+    public Animator timerAnimation;
     Timer timer;
     Score score;
 
@@ -105,6 +105,7 @@ public class GameManager : MonoBehaviour
                 sequenceDone = true;
                 //add 1 to score
                 timer.ResetTimer();
+                timerAnimation.SetTrigger("ResetTimer");
                 score.AddScore();
                 //delay 2 seconds
                 //LoadNewCustomer
@@ -136,7 +137,8 @@ public class GameManager : MonoBehaviour
         currentCustomer.gameObject.SetActive(true);
         currentCustomer.DisplayUnshavedSprite();
         GenerateButtons();
-        timerAnimation.SetTrigger("StartTimer");
+        
+        
         
     }
 

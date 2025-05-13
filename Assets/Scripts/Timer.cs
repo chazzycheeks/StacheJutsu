@@ -6,20 +6,22 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    private float firstTimer = 6f;
-    private float timeLimit = 0f;
-    private float secondTimer = 3.5f;
-    private float thirdTimer = 2.5f;
+    public float firstTimer = 6f;
+    public float timeLimit = 0f;
+    public float secondTimer = 3.5f;
+    public float thirdTimer = 2.5f;
     
     GameManager gameManager;
     Score Score;
     private float currentTargetTime;
+    
 
     private void Start()
     {
         gameManager = FindAnyObjectByType<GameManager>();
         Score = FindAnyObjectByType<Score>();
         currentTargetTime = firstTimer;
+      
     }
     private void Update()
     {
@@ -28,14 +30,30 @@ public class Timer : MonoBehaviour
             RunTimer();
         }
 
-        if (Score.score == 6)
+        if (Score.score < 9) 
+        {
+            gameManager.timerAnimation.SetTrigger("StartTimer");
+        }
+
+        if (Score.score == 10)
         {
             currentTargetTime = secondTimer;
         }
 
-        if (Score.score == 12)
+        if (Score.score < 19)
+        {
+            gameManager.timerAnimation.SetTrigger("SecondTimer");
+            
+        }
+
+        if (Score.score == 20)
         {
             currentTargetTime = thirdTimer;
+        }
+
+        if (Score.score > 19)
+        {
+            gameManager.timerAnimation.SetTrigger("ThirdTimer");
         }
 
     }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7882084009201331948}
   - component: {fileID: 3109948846437091099}
   - component: {fileID: 6795964753122776263}
+  - component: {fileID: 2337986970046180978}
   m_Layer: 5
   m_Name: RightArrowLit
   m_TagString: Untagged
@@ -75,6 +76,28 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &2337986970046180978
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3590807029715771808}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0870926adbbdcb84386b7ff167178905, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6797743576910141893
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,3 +188,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lit: {fileID: 3590807029715771808}
+  unlit: {fileID: 6797743576910141893}
+  litButton: {fileID: 2337986970046180978}
