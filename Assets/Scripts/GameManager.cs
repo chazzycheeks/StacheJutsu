@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
 
     public Animator nice;
     public Animator timerAnimation;
+    public Animator scroll;
     Timer timer;
     Score score;
 
@@ -37,11 +38,21 @@ public class GameManager : MonoBehaviour
         timer = FindAnyObjectByType<Timer>();
         score = FindAnyObjectByType<Score>();
 
+        
+
         if (score != null)
         {
             score.ResetScore();
         }
-        StartCoroutine(LoadNewCustomer());
+        
+        StartCoroutine(GameIntro());
+
+
+      //  if (GameIntro == //has finished running)
+        {
+       //     StartCoroutine(LoadNewCustomer());
+        }
+            
     }
 
     // Update is called once per frame
@@ -51,6 +62,12 @@ public class GameManager : MonoBehaviour
         {
             HandleSequenceInput();
         }
+    }
+
+    public IEnumerator GameIntro()
+    {
+        scroll.SetTrigger("ScrollOpen");
+        yield return new WaitForSeconds(2f);
     }
 
     private void HandleSequenceInput()
@@ -126,7 +143,7 @@ public class GameManager : MonoBehaviour
     public IEnumerator LoadNewCustomer()
     {
        
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.3f);
        if (currentCustomer != null)
         {
             currentCustomer.gameObject.SetActive(false);

@@ -1,34 +1,37 @@
 fileFormatVersion: 2
-guid: dda6c99fb9f4b924398c477ee6836220
+guid: 142c7c4b3c722f04d8d12990cdce70a2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3251985736006704177
-    second: timer_sprite_sheet_0
+      213: -481506685068789416
+    second: scroll_sprite_sheet_0
   - first:
-      213: -1749810614382886002
-    second: timer_sprite_sheet_1
+      213: 6931346090642466057
+    second: scroll_sprite_sheet_1
   - first:
-      213: 4475778211150901840
-    second: timer_sprite_sheet_2
+      213: 1186951768590322770
+    second: scroll_sprite_sheet_2
   - first:
-      213: 8998254189724447507
-    second: timer_sprite_sheet_3
+      213: -4714201451750532849
+    second: scroll_sprite_sheet_3
   - first:
-      213: -7719847359381604038
-    second: timer_sprite_sheet_4
+      213: 2748486973141856365
+    second: scroll_sprite_sheet_4
   - first:
-      213: 5606925905641180991
-    second: timer_sprite_sheet_5
+      213: -5480881780904342494
+    second: scroll_sprite_sheet_5
   - first:
-      213: -7577078180511073680
-    second: timer_sprite_sheet_6
+      213: -1113929005449865813
+    second: scroll_sprite_sheet_6
   - first:
-      213: 8723307133443305841
-    second: timer_sprite_sheet_7
+      213: 1437331489697925677
+    second: scroll_sprite_sheet_7
   - first:
-      213: -8497289494680480237
-    second: timer_sprite_sheet_8
+      213: -7618712454303168608
+    second: scroll_sprite_sheet_8
+  - first:
+      213: 2433047676381713448
+    second: scroll_sprite_sheet_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -120,229 +123,225 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: timer_sprite_sheet_0
+      name: scroll_sprite_sheet_0
       rect:
         serializedVersion: 2
-        x: 55
-        y: 985
-        width: 352
-        height: 364
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 1900
+        width: 475
+        height: 950
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 13c11511ccf512d20800000000000000
-      internalID: 3251985736006704177
+      spriteID: 937bbaa885c3891449b372d8cdaad646
+      internalID: -1730183947
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: timer_sprite_sheet_1
+      name: scroll_sprite_sheet_1
       rect:
         serializedVersion: 2
-        x: 516
-        y: 984
-        width: 350
-        height: 364
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 476
+        y: 1900
+        width: 475
+        height: 950
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e830081648c67b7e0800000000000000
-      internalID: -1749810614382886002
+      spriteID: 91f9a95890bec714d962256d20c4a538
+      internalID: -1799870641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: timer_sprite_sheet_2
+      name: scroll_sprite_sheet_2
       rect:
         serializedVersion: 2
-        x: 975
-        y: 985
-        width: 352
-        height: 364
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 951
+        y: 1900
+        width: 475
+        height: 950
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0523511c1982d1e30800000000000000
-      internalID: 4475778211150901840
+      spriteID: a8f9552b82df0f04eba0ae5a308c1db4
+      internalID: -1677902609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: timer_sprite_sheet_3
+      name: scroll_sprite_sheet_3
       rect:
         serializedVersion: 2
-        x: 56
-        y: 524
-        width: 350
-        height: 364
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1426
+        y: 1900
+        width: 474
+        height: 950
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3133231c28830ec70800000000000000
-      internalID: 8998254189724447507
+      spriteID: 96388b11b1d119641943d4c3072b8374
+      internalID: -702348469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: timer_sprite_sheet_4
+      name: scroll_sprite_sheet_4
       rect:
         serializedVersion: 2
-        x: 515
-        y: 525
-        width: 352
-        height: 364
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 950
+        width: 475
+        height: 950
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a3972d76ab79dd490800000000000000
-      internalID: -7719847359381604038
+      spriteID: 30732e3e921e5f748a69bb9aa0366542
+      internalID: -1973310964
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: timer_sprite_sheet_5
+      name: scroll_sprite_sheet_5
       rect:
         serializedVersion: 2
-        x: 976
-        y: 524
-        width: 350
-        height: 364
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 476
+        y: 950
+        width: 475
+        height: 950
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f3f8da7876dcfcd40800000000000000
-      internalID: 5606925905641180991
+      spriteID: b93f32bfcb6c571418dbbf9e33d0c0d3
+      internalID: 1328075517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: timer_sprite_sheet_6
+      name: scroll_sprite_sheet_6
       rect:
         serializedVersion: 2
-        x: 55
-        y: 65
-        width: 352
-        height: 364
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 951
+        y: 950
+        width: 475
+        height: 950
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 07a36473a8fc8d690800000000000000
-      internalID: -7577078180511073680
+      spriteID: 67a9f87e7f30a744091c014406b789b4
+      internalID: 1772859073
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: timer_sprite_sheet_7
+      name: scroll_sprite_sheet_7
       rect:
         serializedVersion: 2
-        x: 516
-        y: 64
-        width: 350
-        height: 364
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1426
+        y: 950
+        width: 474
+        height: 950
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 171f48bae996f0970800000000000000
-      internalID: 8723307133443305841
+      spriteID: cc295e05b2f72ac42987ba9d82c894f9
+      internalID: 1495706605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: timer_sprite_sheet_8
+      name: scroll_sprite_sheet_8
       rect:
         serializedVersion: 2
-        x: 975
-        y: 65
-        width: 352
-        height: 364
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 475
+        height: 950
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 31659e3a930931a80800000000000000
-      internalID: -8497289494680480237
+      spriteID: d4ee00db211418c418e687840b4cc3a7
+      internalID: -92700522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scroll_sprite_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 0
+        width: 475
+        height: 950
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41394b74d924b42429bad72e00feff83
+      internalID: 124055659
       vertices: []
       indices: 
       edges: []
@@ -351,7 +350,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: aab8395546fc0c4408de3ecb09d17cf8
     internalID: 0
     vertices: []
     indices: 
@@ -361,15 +360,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      timer_sprite_sheet_0: 3251985736006704177
-      timer_sprite_sheet_1: -1749810614382886002
-      timer_sprite_sheet_2: 4475778211150901840
-      timer_sprite_sheet_3: 8998254189724447507
-      timer_sprite_sheet_4: -7719847359381604038
-      timer_sprite_sheet_5: 5606925905641180991
-      timer_sprite_sheet_6: -7577078180511073680
-      timer_sprite_sheet_7: 8723307133443305841
-      timer_sprite_sheet_8: -8497289494680480237
+      scroll_sprite_sheet_0: -1730183947
+      scroll_sprite_sheet_1: -1799870641
+      scroll_sprite_sheet_10: 1264683692
+      scroll_sprite_sheet_11: -1663681565
+      scroll_sprite_sheet_2: -1677902609
+      scroll_sprite_sheet_3: -702348469
+      scroll_sprite_sheet_4: -1973310964
+      scroll_sprite_sheet_5: 1328075517
+      scroll_sprite_sheet_6: 1772859073
+      scroll_sprite_sheet_7: 1495706605
+      scroll_sprite_sheet_8: -92700522
+      scroll_sprite_sheet_9: 124055659
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
