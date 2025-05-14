@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      scroll910_0: 4305401397023323057
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

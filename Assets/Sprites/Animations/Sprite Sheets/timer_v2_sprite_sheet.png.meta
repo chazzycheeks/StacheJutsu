@@ -360,7 +360,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      timer_v2_sprite_sheet_0: -1427590287988725052
+      timer_v2_sprite_sheet_1: -8104144612783320391
+      timer_v2_sprite_sheet_2: -5134228381615553671
+      timer_v2_sprite_sheet_3: 5570283065989086317
+      timer_v2_sprite_sheet_4: 8644945417196250071
+      timer_v2_sprite_sheet_5: 8610345716006694288
+      timer_v2_sprite_sheet_6: -3024332500162940847
+      timer_v2_sprite_sheet_7: 2164193913073062857
+      timer_v2_sprite_sheet_8: -3166259804475524865
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
