@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b6fe8584711b0e54bbf3978bdc130c3e
+guid: d0b01eea8b16b84428964b7ac9e1138e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 357585243727820222
-    second: chair_0
+      213: 314876967240432870
+    second: scroll3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,23 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chair_0
+      name: scroll3_0
       rect:
         serializedVersion: 2
-        x: 88
-        y: 4
-        width: 951
-        height: 750
+        x: 48
+        y: 76
+        width: 425
+        height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eb5715572e566f400800000000000000
-      internalID: 357585243727820222
+      spriteID: 6ec7154feeaae5400800000000000000
+      internalID: 314876967240432870
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b120a0068e2668f448296036b58cc1bb
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      chair_0: 357585243727820222
+      scroll3_0: 314876967240432870
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,37 +1,34 @@
 fileFormatVersion: 2
-guid: 142c7c4b3c722f04d8d12990cdce70a2
+guid: 1622d605fa6d6de448d1e0b5ff870220
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -481506685068789416
-    second: scroll_sprite_sheet_0
+      213: -1427590287988725052
+    second: timer_v2_sprite_sheet_0
   - first:
-      213: 6931346090642466057
-    second: scroll_sprite_sheet_1
+      213: -8104144612783320391
+    second: timer_v2_sprite_sheet_1
   - first:
-      213: 1186951768590322770
-    second: scroll_sprite_sheet_2
+      213: -5134228381615553671
+    second: timer_v2_sprite_sheet_2
   - first:
-      213: -4714201451750532849
-    second: scroll_sprite_sheet_3
+      213: 5570283065989086317
+    second: timer_v2_sprite_sheet_3
   - first:
-      213: 2748486973141856365
-    second: scroll_sprite_sheet_4
+      213: 8644945417196250071
+    second: timer_v2_sprite_sheet_4
   - first:
-      213: -5480881780904342494
-    second: scroll_sprite_sheet_5
+      213: 8610345716006694288
+    second: timer_v2_sprite_sheet_5
   - first:
-      213: -1113929005449865813
-    second: scroll_sprite_sheet_6
+      213: -3024332500162940847
+    second: timer_v2_sprite_sheet_6
   - first:
-      213: 1437331489697925677
-    second: scroll_sprite_sheet_7
+      213: 2164193913073062857
+    second: timer_v2_sprite_sheet_7
   - first:
-      213: -7618712454303168608
-    second: scroll_sprite_sheet_8
-  - first:
-      213: 2433047676381713448
-    second: scroll_sprite_sheet_9
+      213: -3166259804475524865
+    second: timer_v2_sprite_sheet_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -153,265 +150,199 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: scroll_sprite_sheet_0
+      name: timer_v2_sprite_sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1900
-        width: 475
-        height: 950
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 53
+        y: 982
+        width: 354
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 937bbaa885c3891449b372d8cdaad646
-      internalID: -1730183947
+      spriteID: 4ca62af523e203ce0800000000000000
+      internalID: -1427590287988725052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scroll_sprite_sheet_1
+      name: timer_v2_sprite_sheet_1
       rect:
         serializedVersion: 2
-        x: 475
-        y: 1900
-        width: 475
-        height: 950
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 521
+        y: 982
+        width: 345
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 91f9a95890bec714d962256d20c4a538
-      internalID: -1799870641
+      spriteID: 9b297aa896b488f80800000000000000
+      internalID: -8104144612783320391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scroll_sprite_sheet_2
+      name: timer_v2_sprite_sheet_2
       rect:
         serializedVersion: 2
-        x: 950
-        y: 1900
-        width: 475
-        height: 950
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 973
+        y: 982
+        width: 354
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a8f9552b82df0f04eba0ae5a308c1db4
-      internalID: -1677902609
+      spriteID: 973831e3d7e8fb8b0800000000000000
+      internalID: -5134228381615553671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scroll_sprite_sheet_3
+      name: timer_v2_sprite_sheet_3
       rect:
         serializedVersion: 2
-        x: 1425
-        y: 1900
-        width: 475
-        height: 950
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 61
+        y: 522
+        width: 345
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 96388b11b1d119641943d4c3072b8374
-      internalID: -702348469
+      spriteID: d6c37a69fee9d4d40800000000000000
+      internalID: 5570283065989086317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scroll_sprite_sheet_4
+      name: timer_v2_sprite_sheet_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 950
-        width: 475
-        height: 950
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 513
+        y: 522
+        width: 354
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 30732e3e921e5f748a69bb9aa0366542
-      internalID: -1973310964
+      spriteID: 7d3af96dd0409f770800000000000000
+      internalID: 8644945417196250071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scroll_sprite_sheet_5
+      name: timer_v2_sprite_sheet_5
       rect:
         serializedVersion: 2
-        x: 475
-        y: 950
-        width: 475
-        height: 950
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 981
+        y: 522
+        width: 345
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b93f32bfcb6c571418dbbf9e33d0c0d3
-      internalID: 1328075517
+      spriteID: 09da2e32fc71e7770800000000000000
+      internalID: 8610345716006694288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scroll_sprite_sheet_6
+      name: timer_v2_sprite_sheet_6
       rect:
         serializedVersion: 2
-        x: 950
-        y: 950
-        width: 475
-        height: 950
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 53
+        y: 62
+        width: 354
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 67a9f87e7f30a744091c014406b789b4
-      internalID: 1772859073
+      spriteID: 1507e1d5d996706d0800000000000000
+      internalID: -3024332500162940847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scroll_sprite_sheet_7
+      name: timer_v2_sprite_sheet_7
       rect:
         serializedVersion: 2
-        x: 1425
-        y: 950
-        width: 475
-        height: 950
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 521
+        y: 62
+        width: 345
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: cc295e05b2f72ac42987ba9d82c894f9
-      internalID: 1495706605
+      spriteID: 9c358c5c5e2c80e10800000000000000
+      internalID: 2164193913073062857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scroll_sprite_sheet_8
+      name: timer_v2_sprite_sheet_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 475
-        height: 950
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 977
+        y: 63
+        width: 349
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d4ee00db211418c418e687840b4cc3a7
-      internalID: -92700522
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scroll_sprite_sheet_9
-      rect:
-        serializedVersion: 2
-        x: 475
-        y: 0
-        width: 475
-        height: 950
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41394b74d924b42429bad72e00feff83
-      internalID: 124055659
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scroll_sprite_sheet_10
-      rect:
-        serializedVersion: 2
-        x: 950
-        y: 0
-        width: 475
-        height: 950
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b7f645bbc5fedae43b8968b743caea98
-      internalID: 1264683692
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scroll_sprite_sheet_11
-      rect:
-        serializedVersion: 2
-        x: 1425
-        y: 0
-        width: 475
-        height: 950
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 529238d62da135746802d580a209ed1b
-      internalID: -1663681565
+      spriteID: ff873afbb7f2f04d0800000000000000
+      internalID: -3166259804475524865
       vertices: []
       indices: 
       edges: []
@@ -420,7 +351,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: aab8395546fc0c4408de3ecb09d17cf8
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -429,19 +360,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      scroll_sprite_sheet_0: -1730183947
-      scroll_sprite_sheet_1: -1799870641
-      scroll_sprite_sheet_10: 1264683692
-      scroll_sprite_sheet_11: -1663681565
-      scroll_sprite_sheet_2: -1677902609
-      scroll_sprite_sheet_3: -702348469
-      scroll_sprite_sheet_4: -1973310964
-      scroll_sprite_sheet_5: 1328075517
-      scroll_sprite_sheet_6: 1772859073
-      scroll_sprite_sheet_7: 1495706605
-      scroll_sprite_sheet_8: -92700522
-      scroll_sprite_sheet_9: 124055659
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

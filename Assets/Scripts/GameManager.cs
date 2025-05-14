@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
     public Animator nice;
     public Animator timerAnimation;
     public Animator scroll;
+    public Animator scoreAnimation;
+    public Animator hajime;
     Timer timer;
     Score score;
 
@@ -38,21 +40,12 @@ public class GameManager : MonoBehaviour
         timer = FindAnyObjectByType<Timer>();
         score = FindAnyObjectByType<Score>();
 
-        
-
         if (score != null)
         {
             score.ResetScore();
         }
         
-        StartCoroutine(GameIntro());
-
-
-      //  if (GameIntro == //has finished running)
-        {
-       //     StartCoroutine(LoadNewCustomer());
-        }
-            
+        StartCoroutine(GameIntro());       
     }
 
     // Update is called once per frame
@@ -67,7 +60,12 @@ public class GameManager : MonoBehaviour
     public IEnumerator GameIntro()
     {
         scroll.SetTrigger("ScrollOpen");
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSecondsRealtime(1.5f);
+        timerAnimation.SetTrigger("TimerEntry");
+        scoreAnimation.SetTrigger("ScoreEntry");
+        yield return new WaitForSecondsRealtime(1f);
+        hajime.SetTrigger("Hajime");
+        StartCoroutine(LoadNewCustomer());
     }
 
     private void HandleSequenceInput()
@@ -143,7 +141,7 @@ public class GameManager : MonoBehaviour
     public IEnumerator LoadNewCustomer()
     {
        
-        yield return new WaitForSeconds(1.3f);
+        yield return new WaitForSecondsRealtime(1.3f);
        if (currentCustomer != null)
         {
             currentCustomer.gameObject.SetActive(false);
@@ -153,6 +151,18 @@ public class GameManager : MonoBehaviour
         currentCustomer = customerList[customerIndex];
         currentCustomer.gameObject.SetActive(true);
         currentCustomer.DisplayUnshavedSprite();
+        if (timer.currentTargetTime == timer.firstTimer)
+        {
+            timerAnimation.SetTrigger("StartTimer");
+        }
+        else if (timer.currentTargetTime == timer.secondTimer)
+        {
+            timerAnimation.SetTrigger("SecondTimer");
+        }
+        else if (timer.currentTargetTime == timer.thirdTimer)
+        {
+            timerAnimation.SetTrigger("ThirdTimer");
+        }
         GenerateButtons();
         
         

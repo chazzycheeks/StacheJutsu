@@ -8,9 +8,9 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-    public void SettingsButton()
+    public void HowToPlayButton()
     {
-        // make settings menu
+        SceneManager.LoadScene(3);
     }
 
     public void QuitButton()

@@ -13,7 +13,7 @@ public class Timer : MonoBehaviour
     
     GameManager gameManager;
     Score Score;
-    private float currentTargetTime;
+    public float currentTargetTime;
     
 
     private void Start()
@@ -30,31 +30,34 @@ public class Timer : MonoBehaviour
             RunTimer();
         }
 
-        if (Score.score < 9) 
+       /* if (Score.score < 9) 
         {
+            
             gameManager.timerAnimation.SetTrigger("StartTimer");
-        }
+        }*/
 
         if (Score.score == 10)
         {
             currentTargetTime = secondTimer;
         }
 
-        if (Score.score < 19)
+       /* if (Score.score < 19)
         {
+            
             gameManager.timerAnimation.SetTrigger("SecondTimer");
             
-        }
+        }*/
 
         if (Score.score == 20)
         {
             currentTargetTime = thirdTimer;
         }
 
-        if (Score.score > 19)
+        /*if (Score.score > 19)
         {
+
             gameManager.timerAnimation.SetTrigger("ThirdTimer");
-        }
+        }*/
 
     }
     public void RunTimer()
@@ -72,5 +75,6 @@ public class Timer : MonoBehaviour
         timeLimit = 0f;
     }
     
+
     
 }
