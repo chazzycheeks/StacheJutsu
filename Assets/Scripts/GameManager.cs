@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
     public GameObject mainGame;
     public GameObject gameOver;
     
+    public ParticleSystem puffCloud;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -115,7 +116,8 @@ public class GameManager : MonoBehaviour
                 sequenceIndex = 0;
                 sequenceChecker.Clear();
                 //switch to shaved sprite
-                nice.SetTrigger("CustomerCompleted");
+              //  nice.SetTrigger("CustomerCompleted");
+                puffCloud.Play();
                 currentCustomer.DisplayShavedSprite();
                 sequenceDone = true;
                 //add 1 to score
@@ -140,8 +142,13 @@ public class GameManager : MonoBehaviour
     }   
     public IEnumerator LoadNewCustomer()
     {
-       
-        yield return new WaitForSecondsRealtime(1.3f);
+        yield return new WaitForSecondsRealtime(0.3f);
+        if (currentCustomer != null)
+        {
+            nice.SetTrigger("CustomerCompleted");
+        }
+        
+        yield return new WaitForSecondsRealtime(1f);
        if (currentCustomer != null)
         {
             currentCustomer.gameObject.SetActive(false);

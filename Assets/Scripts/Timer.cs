@@ -8,8 +8,8 @@ public class Timer : MonoBehaviour
 {
     public float firstTimer = 6f;
     public float timeLimit = 0f;
-    public float secondTimer = 3.5f;
-    public float thirdTimer = 2.5f;
+    public float secondTimer = 4.5f;
+    public float thirdTimer = 3.5f;
     
     GameManager gameManager;
     Score Score;
@@ -36,7 +36,7 @@ public class Timer : MonoBehaviour
             gameManager.timerAnimation.SetTrigger("StartTimer");
         }*/
 
-        if (Score.score == 10)
+        if (Score.score == 3)
         {
             currentTargetTime = secondTimer;
         }
@@ -48,7 +48,7 @@ public class Timer : MonoBehaviour
             
         }*/
 
-        if (Score.score == 20)
+        if (Score.score == 5)
         {
             currentTargetTime = thirdTimer;
         }
