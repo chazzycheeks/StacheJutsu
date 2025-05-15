@@ -170,6 +170,10 @@ public class GameManager : MonoBehaviour
         {
             timerAnimation.SetTrigger("ThirdTimer");
         }
+        else if (timer.currentTargetTime == timer.fourthTimer)
+        {
+            timerAnimation.SetTrigger("FourthTimer");
+        }
         GenerateButtons();
         
         
