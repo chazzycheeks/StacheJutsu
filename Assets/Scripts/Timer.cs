@@ -15,12 +15,14 @@ public class Timer : MonoBehaviour
     GameManager gameManager;
     Score Score;
     public float currentTargetTime;
+    AudioManager audioManager;
     
 
     private void Start()
     {
         gameManager = FindAnyObjectByType<GameManager>();
         Score = FindAnyObjectByType<Score>();
+        audioManager = FindAnyObjectByType<AudioManager>();
         currentTargetTime = firstTimer;
       
     }
@@ -31,23 +33,16 @@ public class Timer : MonoBehaviour
             RunTimer();
         }
 
-       /* if (Score.score < 9) 
+       /* if (Score.score % 10 == 0 && Score.score > 0)
         {
-            
-            gameManager.timerAnimation.SetTrigger("StartTimer");
+            audioManager.PlayProgressDing();
         }*/
 
         if (Score.score == 10)
         {
             currentTargetTime = secondTimer;
-        }
 
-       /* if (Score.score < 19)
-        {
-            
-            gameManager.timerAnimation.SetTrigger("SecondTimer");
-            
-        }*/
+        }
 
         if (Score.score == 20)
         {
@@ -57,13 +52,8 @@ public class Timer : MonoBehaviour
         if (Score.score == 35)
         {
             currentTargetTime = fourthTimer;
+
         }
-
-        /*if (Score.score > 19)
-        {
-
-            gameManager.timerAnimation.SetTrigger("ThirdTimer");
-        }*/
 
     }
     public void RunTimer()

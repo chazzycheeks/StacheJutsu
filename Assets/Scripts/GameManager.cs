@@ -33,6 +33,8 @@ public class GameManager : MonoBehaviour
     
     public ParticleSystem puffCloud;
 
+    AudioManager audioManager;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -40,6 +42,7 @@ public class GameManager : MonoBehaviour
         
         timer = FindAnyObjectByType<Timer>();
         score = FindAnyObjectByType<Score>();
+        audioManager = FindAnyObjectByType<AudioManager>();
 
         if (score != null)
         {
@@ -65,6 +68,7 @@ public class GameManager : MonoBehaviour
         timerAnimation.SetTrigger("TimerEntry");
         scoreAnimation.SetTrigger("ScoreEntry");
         yield return new WaitForSecondsRealtime(1f);
+        audioManager.PlayHajime();
         hajime.SetTrigger("Hajime");
         StartCoroutine(LoadNewCustomer());
     }
@@ -75,21 +79,25 @@ public class GameManager : MonoBehaviour
         {
             sequenceChecker.Add("Up");
             CheckSequence();
+            audioManager.PlayHandSound();
         }
         if (Input.GetKeyUp(KeyCode.DownArrow))
         {
             sequenceChecker.Add("Down");
             CheckSequence();
+            audioManager.PlayHandSound();
         }
         if (Input.GetKeyUp(KeyCode.LeftArrow))
         {
             sequenceChecker.Add("Left");
             CheckSequence();
+            audioManager.PlayHandSound();
         }
         if (Input.GetKeyUp(KeyCode.RightArrow))
         {
             sequenceChecker.Add("Right");
             CheckSequence();
+            audioManager.PlayHandSound();
         }
     }
 
@@ -116,7 +124,7 @@ public class GameManager : MonoBehaviour
                 sequenceIndex = 0;
                 sequenceChecker.Clear();
                 //switch to shaved sprite
-              //  nice.SetTrigger("CustomerCompleted");
+                //  nice.SetTrigger("CustomerCompleted");
                 puffCloud.Play();
                 currentCustomer.DisplayShavedSprite();
                 sequenceDone = true;
@@ -124,9 +132,14 @@ public class GameManager : MonoBehaviour
                 timer.ResetTimer();
                 timerAnimation.SetTrigger("ResetTimer");
                 score.AddScore();
+                if (score.score % 10 == 0 && score.score > 0)
+                {
+                    audioManager.PlayProgressDing();
+                }
                 //delay 2 seconds
                 //LoadNewCustomer
-                
+
+                audioManager.PlaySmokePuff();
                 StartCoroutine(LoadNewCustomer());
                
 
@@ -137,6 +150,7 @@ public class GameManager : MonoBehaviour
         {
             mainGame.SetActive(false);
             gameOver.SetActive(true);
+            audioManager.PlayFail();
           
         }
     }   
@@ -148,8 +162,10 @@ public class GameManager : MonoBehaviour
             nice.SetTrigger("CustomerCompleted");
         }
         
-        yield return new WaitForSecondsRealtime(1f);
-       if (currentCustomer != null)
+        yield return new WaitForSecondsRealtime(0.5f);
+        audioManager.PlayDoorbell();
+        yield return new WaitForSecondsRealtime(0.5f);
+        if (currentCustomer != null)
         {
             currentCustomer.gameObject.SetActive(false);
         }
