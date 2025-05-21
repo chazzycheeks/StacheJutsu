@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
     Timer timer;
     Score score;
 
-    
+    public GameObject music;
     public GameObject mainGame;
     public GameObject gameOver;
     
@@ -65,12 +65,15 @@ public class GameManager : MonoBehaviour
     {
         scroll.SetTrigger("ScrollOpen");
         yield return new WaitForSecondsRealtime(1.5f);
+        audioManager.PlayDrum();
         timerAnimation.SetTrigger("TimerEntry");
         scoreAnimation.SetTrigger("ScoreEntry");
         yield return new WaitForSecondsRealtime(1f);
         audioManager.PlayHajime();
         hajime.SetTrigger("Hajime");
         StartCoroutine(LoadNewCustomer());
+        yield return new WaitForSecondsRealtime(1f);
+        music.SetActive(true);
     }
 
     private void HandleSequenceInput()
@@ -79,25 +82,25 @@ public class GameManager : MonoBehaviour
         {
             sequenceChecker.Add("Up");
             CheckSequence();
-            audioManager.PlayHandSound();
+            audioManager.PlayHandSound2();
         }
         if (Input.GetKeyUp(KeyCode.DownArrow))
         {
             sequenceChecker.Add("Down");
             CheckSequence();
-            audioManager.PlayHandSound();
+            audioManager.PlayHandSound1();
         }
         if (Input.GetKeyUp(KeyCode.LeftArrow))
         {
             sequenceChecker.Add("Left");
             CheckSequence();
-            audioManager.PlayHandSound();
+            audioManager.PlayHandSound3();
         }
         if (Input.GetKeyUp(KeyCode.RightArrow))
         {
             sequenceChecker.Add("Right");
             CheckSequence();
-            audioManager.PlayHandSound();
+            audioManager.PlayHandSound2();
         }
     }
 

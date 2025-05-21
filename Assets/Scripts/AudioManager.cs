@@ -12,8 +12,10 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public List<Sound> soundList;
+    public List<AudioSource> audioSources;
 
-    [SerializeField] private AudioSource audioSource;
+    //Make this a list of audio sources
+    /*[SerializeField] private AudioSource audioSource;*/
 
     public void PlayDoorbell()
     {
@@ -34,9 +36,17 @@ public class AudioManager : MonoBehaviour
         PlaySound("Fail");
     }
 
-    public void PlayHandSound()
+    public void PlayHandSound1()
     {
-        PlaySound("Hands");
+        PlaySound("Hands1");
+    }
+    public void PlayHandSound2()
+    {
+        PlaySound("Hands2");
+    }
+    public void PlayHandSound3()
+    {
+        PlaySound("Hands3");
     }
 
     public void PlaySmokePuff()
@@ -44,20 +54,39 @@ public class AudioManager : MonoBehaviour
         PlaySound("Smoke");
     }
 
+    public void PlayDrum()
+    {
+        PlaySound("Drum");
+    }
+
     private void PlaySound(string targetId)
     {
-        audioSource.clip = null;
-
-        FindSoundWithId(targetId);
-
-        if (audioSource.clip == null)
+       
+        //Local variable which stores the audiosource we're going to play on
+        //go through the list of audio sources (for or foreach loop)
+        //Once you have found one that isn't playing - play on that one
+        foreach (AudioSource audioSource in audioSources)
         {
-            return;
+            if (audioSource.isPlaying == false)
+            {
+                /*audioSource.clip = null;*/
+
+                FindSoundWithId(targetId, audioSource);
+
+                if (audioSource.clip == null)
+                {
+                    return;
+                }
+
+                audioSource.Play();
+
+                return;
+            }
+            
         }
 
-        audioSource.Play();
     }
-    private void FindSoundWithId(string targetId)
+    private void FindSoundWithId(string targetId, AudioSource source)
     {
         foreach (Sound sound in soundList)
         {
@@ -66,8 +95,8 @@ public class AudioManager : MonoBehaviour
                 continue;
             }
 
-            audioSource.clip = sound.clip;
-            audioSource.volume = sound.volume;
+            source.clip = sound.clip;
+            source.volume = sound.volume;
             break;
         }
     }

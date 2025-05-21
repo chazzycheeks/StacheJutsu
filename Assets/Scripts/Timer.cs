@@ -62,7 +62,8 @@ public class Timer : MonoBehaviour
         if (timeLimit > currentTargetTime)
         {
             gameManager.mainGame.SetActive(false);
-            gameManager.gameOver.SetActive(true); 
+            gameManager.gameOver.SetActive(true);
+            audioManager.PlayFail();
         }
 
     }
