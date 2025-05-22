@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class ScoreDisplay : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
+   /* [SerializeField] private TextMeshProUGUI highScoreText;*/
     Score currentScore;
 
     private void Start()
@@ -16,6 +17,11 @@ public class ScoreDisplay : MonoBehaviour
     {
         scoreText.text = currentScore.score.ToString();
     }
-   
+
+    /*public void UpdateHighScoreText()
+    {
+        highScoreText.text = $"HighScore:{PlayerPrefs.GetInt("HighScore", 0)}";
+    }
+   */
 }
 

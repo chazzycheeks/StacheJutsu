@@ -5,8 +5,13 @@ using System;
 
 public class Score : MonoBehaviour
 {
-    
+    [SerializeField] private TextMeshProUGUI highScoreText;
     public int score;
+
+    private void Start()
+    {
+        UpdateHighScoreText();
+    }
 
     public void ResetScore()
     {
@@ -15,5 +20,22 @@ public class Score : MonoBehaviour
     public void AddScore()
     {
         score++;    
+        CheckHighScore();
     }
+
+    public void CheckHighScore()
+    {
+        if (score > PlayerPrefs.GetInt("HighScore", 0))
+        {
+            PlayerPrefs.SetInt("HighScore", score);
+            UpdateHighScoreText();
+            
+        }
+    }
+    public void UpdateHighScoreText()
+    {
+        highScoreText.text = $"{PlayerPrefs.GetInt("HighScore", 0)}";
+        
+    }
+
 }
