@@ -7,11 +7,11 @@ public class VolumeSlider : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if (!PlayerPrefs.HasKey("musicVolume"))
+        if (!PlayerPrefs.HasKey("Volume"))
         {
-            PlayerPrefs.SetFloat("musicVolume", 1);
-            Load();
+            PlayerPrefs.SetFloat("Volume", 1);
         }
+            Load();
     }
     public void ChangeVolume()
     {
@@ -21,11 +21,11 @@ public class VolumeSlider : MonoBehaviour
 
     private void Load()
     {
-        volumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
+        volumeSlider.value = PlayerPrefs.GetFloat("Volume");
     }
 
     private void Save()
     {
-        PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
+        PlayerPrefs.SetFloat("Volume", volumeSlider.value);
     }
 }
