@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 83197494}
   - component: {fileID: 83197493}
   m_Layer: 0
-  m_Name: sting
+  m_Name: menu music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -146,8 +146,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 06d2e4e31a97da148b49aebad35619e8, type: 3}
-  m_Resource: {fileID: 8300000, guid: 06d2e4e31a97da148b49aebad35619e8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1c852d2b4c7ba1d43bf6cf554cfff688, type: 3}
+  m_Resource: {fileID: 8300000, guid: 1c852d2b4c7ba1d43bf6cf554cfff688, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.712
   m_Pitch: 1
