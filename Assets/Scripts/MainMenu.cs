@@ -3,6 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject howToPlayScreen;
+    public GameObject creditsScreen;
+    public GameObject mainMenu;
     public void PlayButton()
     {
         SceneManager.LoadScene(1);
@@ -10,16 +13,32 @@ public class MainMenu : MonoBehaviour
 
     public void HowToPlayButton()
     {
-        SceneManager.LoadScene(3);
+        mainMenu.SetActive(false);
+        howToPlayScreen.SetActive(true);
     }
 
     public void CreditsButton()
     {
-        SceneManager.LoadScene(4);
+        mainMenu.SetActive(false);
+        creditsScreen.SetActive(true);
     }
 
     public void QuitButton()
     {
         Application.Quit();
+    }
+
+    public void BackButton()
+    {
+        if (creditsScreen != null)
+        {
+            creditsScreen.SetActive(false);
+        }
+
+        if (howToPlayScreen != null)
+        {
+            howToPlayScreen.SetActive(false);
+        }
+        mainMenu.SetActive(true);
     }
 }

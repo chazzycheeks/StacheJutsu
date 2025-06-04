@@ -14,13 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 1eb6585d2f97263488b3692beacb5fdc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GameOverScreen.unity
     guid: 12b44b60b08a9b547b3e8ec8f0f7089b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/HowtoplayScreen.unity
     guid: 1764c1f859e1b48489046feb545fd9ff
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Credits.unity
     guid: 6c1eabad116a9954c9bec17b740e347f
   m_configObjects:
