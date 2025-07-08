@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0365121eff83e5a4aa7226b9ce4bb083
+guid: 2ab115c93ea332e4292ba0e24e04099d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3001917958999209408
-    second: broken stache_0
+      213: -6909528557015947233
+    second: Studio_Cas_Logo_With_Text_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,30 +109,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: broken stache_0
+      name: Studio_Cas_Logo_With_Text_0
       rect:
         serializedVersion: 2
-        x: 41
-        y: 17
-        width: 1089
-        height: 557
+        x: 64
+        y: 54
+        width: 2490
+        height: 2237
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 04a8cf8658b0756d0800000000000000
-      internalID: -3001917958999209408
+      spriteID: f18a5a9b26c6c10a0800000000000000
+      internalID: -6909528557015947233
       vertices: []
       indices: 
       edges: []
@@ -160,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      broken stache_0: -3001917958999209408
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
